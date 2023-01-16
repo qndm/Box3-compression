@@ -1,0 +1,1 @@
+var worldVoxels = [];for(let x = 0;x < voxels.shape.x;x++){let arr1 = [];for(let y = 0;y < voxels.shape.y;y++){let arr2 = [];for(let z = 0;z < voxels.shape.z;z++){arr2.push(voxels.getVoxelId(x, y, z))}arr1.push(arr2)}worldVoxels.push(arr1)}console.log(JSON.stringify(worldVoxels));
