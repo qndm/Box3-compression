@@ -39,7 +39,7 @@ function compression(data) {
             if(charCode > 0xffff){//超过16位或者到达末尾
                 result += String.fromCharCode(charCode >> 16);
                 charCode %= 0xffff;//舍去左边16位
-                charCode <= 24;
+                charCode <<= 24;
                 charCode |= nowCharCode;
             } else {
                 charCode <<= 24;//左移24位

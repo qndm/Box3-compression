@@ -1,4 +1,4 @@
-const fs = require("fs"), { Box3Vector3, Box3Bounds3 } = require("./Box3"), compression = require("./main-Box3"), config = require("./config");
+const fs = require("fs"), { Box3Vector3 } = require("./Box3"), compression = require("./main-Box3"), config = require("./config");
 var worldVoxels = null, inputBuf = Buffer.alloc(20971520), worldShape = new Box3Vector3();
 console.log('尝试打开文件……');
 fs.open('input.txt', 'r', ((err, fd) => {
